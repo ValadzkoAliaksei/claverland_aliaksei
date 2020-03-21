@@ -1,10 +1,9 @@
-<style>
+
  ol {
 list-style: none; 
 counter-reset: li; 
 }
-li li:before {
+li:before {
 counter-increment: li; 
 content: counters(li,".") ". "; 
 }
-</style>
