@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма 1</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            Регистрационная форма пользователя
+        </legend>
+        <form name="user" >
+            <p>
+                Имя:
+                <input type="text" name="userName" size="20" autofocus>
+            </p>
+            <p>
+                Укажите возраст:
+                <input type="text" name="userAge" list="age">
+                <datalist id="age">
+                    <option value="10-15 лет">
+                    <option value="15-20 лет">
+                    <option value="20-30 лет">
+                    <option value="30-40 лет">
+                    <option value="Старше 40 лет">
+                </datalist>
+            </p> 
+            <p>
+                Укажите пол:
+                <label>мужской <input type="radio" name="sex" value="1"> </label>
+                <label>женский <input type="radio" name="sex" value="2"> </label>
+            </p>
+            <p>
+                Страна проживания:
+                <select name="country">
+                    <option value="1"> Беларусь
+                    <option value="2"> Российская Федерация
+                    <option value="3"> Другое государство
+                </select>
+            </p>
+            <p>
+                Владение языками:
+                <label>русский <input type="checkbox" name="RU" value="1"></label>
+                <label>белорусский <input type="checkbox" name="BY" value="2" checked></label>
+                <label>английский <input type="checkbox" name="EN" value="3"></label>
+            </p>
+            <p>
+               Фото профиля: 
+               <input type="file" >
+            </p>
+            <p>
+                Введите логин: 
+                <input type="text" name="login" size="25" required placeholder="Введите логин"  onfocus="this.placeholder=''" onblur="this.placeholder='Введите логин'" autocomplete="off">
+            </p>
+            <p>
+                Введите пароль: 
+                <input type="password" name="password" size="25" required title="Должен содержать латинские буквы (минимум 6) и цифры (минимум 2)" pattern="[A-Za-z]{6,}\d{2,}" placeholder="Введите пароль" onfocus="this.placeholder=''" onblur="this.placeholder='Введите пароль'">
+            </p>
+            <p>
+                Повторите пароль: 
+                <input type="password" name="password2" size="25" required pattern="[A-Za-z]{6,}\d{2,}" placeholder="Повторите пароль">
+            </p>
+            <input type="reset" value="Сброс" title="Очистить форму">
+            <input type="submit" value="Отправить">
+        </form>
+    </fieldset>
+</body>
+</html>

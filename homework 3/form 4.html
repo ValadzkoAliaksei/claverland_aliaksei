@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма 4</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            Параметры автомобиля
+        </legend>
+        <form name="car">
+            <p>
+                Марка автомобиля:
+                <input type="text" name="model" size="25" autofocus accesskey="a">
+            </p>
+            <p>
+                Объём двигателя, см<sup>3</sup>
+                <input type="text" name="vol" size="25" placeholder="1900" >
+            </p>
+            <p>
+                Область
+            <select name="region">
+                <option value="1"> Брестская
+                <option value="2"> Витебская
+                <option value="3"> Гомельская
+                <option value="4"> Гродненская
+                <option value="5"> Минская
+                <option value="6"> Могилевская
+            </select>
+            </p>
+            <p>
+                Тип КПП <br>
+                <label><input type="radio" name="type" value="1">Автомат</label><br>
+                <label><input type="radio" name="type" value="2">Механика</label><br>
+            </p>
+            <p>
+                Двигатель <br>
+                <label><input type="checkbox" name="motor" value="1"> Электро</label><br>
+                <label><input type="checkbox" name="motor" value="2" > Дизель</label><br>
+                <label><input type="checkbox" name="motor" value="3"> Бензин</label><br>
+                <label><input type="checkbox" name="motor" value="4"> Пропан-бутан</label><br>
+                <label><input type="checkbox" name="motor" value="5"> Метан</label><br>
+            </p>
+            <p>
+                Описание <br><br>
+                <textarea name="inform" cols="30" rows="5" accesskey="a" maxlength="256" onFocus="this.form.submit.disabled=0" wrap="off">
+                </textarea>
+            </p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить" title="Сброс">
+        </form>
+    </fieldset>
+</body>
+</html>
