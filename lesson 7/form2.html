@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Задание 1</title>
-    <style>   
-    th {
-        font-weight: normal;
-    }
-    caption {
-        font-weight: bolder ;
-    }
-    colgroup {
-        padding-left: 6px;
-    }
-    </style>
 </head>
-<body> 
-    <form name="user" >
+
+<body>
+    <form>
         <h2 align="center">
             АНКЕТА
         </h2>
@@ -27,7 +18,7 @@
                         Фамилия
                     </td>
                     <td>
-                        <input type="text" name="surname" size="30">  
+                        <input type="text" name="surname" size="30">
                     </td>
                 </tr>
                 <tr>
@@ -35,7 +26,7 @@
                         Имя
                     </td>
                     <td>
-                        <input type="text" name="name" size="30">  
+                        <input type="text" name="name" size="30">
                     </td>
                 </tr>
                 <tr>
@@ -43,7 +34,7 @@
                         Отчество
                     </td>
                     <td>
-                        <input type="text" name="middle_name" size="30">  
+                        <input type="text" name="middle_name" size="30">
                     </td>
                 </tr>
             </thead>
@@ -55,16 +46,16 @@
                 </tr>
                 <tr>
                     <td>
-                    Пол
+                        Пол
                     </td>
                     <td>
-                       <label><input type="radio" name="sex" value="1">Мужской  </label> <br>
-                       <label><input type="radio" name="sex" value="2">Женский </label> <br>
+                        <label><input type="radio" name="sex" value="1">Мужской </label> <br>
+                        <label><input type="radio" name="sex" value="2">Женский </label> <br>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    Дата рождения
+                        Дата рождения
                     </td>
                     <td>
                         <input type="date" name="date_of_birth">
@@ -83,7 +74,7 @@
                         Адрес места жительства (пребывания)
                     </td>
                     <td>
-                        <input type="text" name="address" size="30">  
+                        <input type="text" name="address" size="30">
                     </td>
                 </tr>
                 <tr>
@@ -91,7 +82,7 @@
                         Номер контактного телефона
                     </td>
                     <td>
-                        +375<input type="text" name="phone_number" size="30">  
+                        +375<input type="text" name="phone_number" size="30">
 
                     </td>
                 </tr>
@@ -99,7 +90,7 @@
                     <td>
                         Контактный e-mail
                     </td>
-                    <td> 
+                    <td>
                         <input type="email" name="email">
                     </td>
                 </tr>
@@ -107,9 +98,11 @@
                     <td>
                         Образование
                     </td>
-                    <td> 
-                        <label><input type="radio" name="education" value="1">-основное общее среднее профессиональное;  </label> <br>
-                        <label><input type="radio" name="education" value="2">-среднее (полное) общее высшее профессиональное</label> <br>
+                    <td>
+                        <label><input type="radio" name="education" value="1">-основное общее среднее профессиональное;
+                        </label> <br>
+                        <label><input type="radio" name="education" value="2">-среднее (полное) общее высшее
+                            профессиональное</label> <br>
                         <label><input type="radio" name="education" value="3">-начальное профессиональное</label> <br>
                         <label><input type="radio" name="education" value="4">-иное</label> <br>
                     </td>
@@ -118,15 +111,15 @@
                     <td>
                         Профессия (специальность)
                     </td>
-                    <td> 
-                        <input type="text" name="profession" size="30">  
+                    <td>
+                        <input type="text" name="profession" size="30">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Стаж работы по специальности
                     </td>
-                    <td> 
+                    <td>
                         <select name="experience">
                             <option value="1"> Менее года
                             <option value="2"> 1-3 года
@@ -140,15 +133,15 @@
                     <td>
                         Предыдущее место работы
                     </td>
-                    <td> 
-                        <input type="text" name="prior_work" size="30">  
+                    <td>
+                        <input type="text" name="prior_work" size="30">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         Период работы на предыдущем месте
                     </td>
-                    <td> 
+                    <td>
                         c<input type="date" name="data1"> по <input type="date" name="data2">
 
                     </td>
@@ -164,4 +157,5 @@
     </form>
     <script src="form2.js"></script>
 </body>
+
 </html>
