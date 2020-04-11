@@ -7,7 +7,7 @@ function checkForm() {
 
     for (let i = 0; i < p.length; i++) {
         p[i].style.color = c;
-        p[i].style.fontSize = s;
+        p[i].style.fontSize = s +'px';
     }
 }
 let t = setInterval(checkForm, 50);
