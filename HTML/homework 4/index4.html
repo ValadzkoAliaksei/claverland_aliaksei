@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 4</title>
+</head>
+
+<body>
+    <fieldset>
+        <form name="job">
+            <h1>
+                Заполни анкету
+            </h1>
+            <p>
+                <b>
+                    Город, в котором я хочу работать:
+                </b>
+                <select name="cityJob">
+                    <option value="1"> Минск
+                    <option value="2"> Витебск
+                    <option value="3"> Могилёв
+                </select>
+            </p>
+            <p>
+                <b>
+                    Меня зовут
+                    <sup>
+                        *
+                    </sup>
+                </b>
+            </p>
+            <p>
+                <input type="text" name="userName" required placeholder="Имя" onfocus="this.placeholder=' '"
+                    onblur="this.placeholder='Имя'">
+                <input type="text" name="userLastName" required placeholder="Фамилия" onfocus="this.placeholder=' '"
+                    onblur="this.placeholder='Фамилия'">
+            </p>
+            <p>
+                <b>
+                    Год, месяц, дата моего рождения
+                    <sup>
+                        *
+                    </sup>
+                </b>
+            </p>
+            <p>
+                <input type="date" name="dateBirth" required>
+            </p>
+            <p>
+                <b>
+                    Сейчас проживаю в городе
+                </b>
+                <input type="text" name="cityLife" size="25">
+                <b>
+                    по адресу
+                </b>
+                <input type="text" name="address" size="25">
+
+            </p>
+            <p>
+                <b>
+                    Мой контактный телефон
+                </b>
+                <br>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" title="Набирать в формате: 000-00-00" maxlength="9">
+            </p>
+            <p>
+                <b>
+                    Образование
+                    <sup>
+                        *
+                    </sup>
+                </b>
+                <br>
+                <label><input type="radio" name="Edu" value="1" required> Высшее</label><br>
+                <label><input type="radio" name="Edu" value="2" required>Средне-специальное</label><br>
+                <label><input type="radio" name="Edu" value="3" required>Профессионально-техническое</label><br>
+                <label><input type="radio" name="Edu" value="3" required>Среднее</label><br>
+            </p>
+            <p>
+                <b>
+                    Занятость в настоящее время.
+                </b>
+                <br>
+                <label><input type="checkbox" name="work" value="1">Работаю</label><br>
+                <label><input type="checkbox" name="learn" value="2">Учусь</label><br>
+                <label><input type="checkbox" name="idle" value="3">Не занят</label><br>
+            </p>
+            <input type="submit" value="Отправить">
+        </form>
+    </fieldset>
+</body>
+
+</html>
