@@ -1,0 +1,18 @@
+#blue {
+    color: blue;
+    font-size: 14pt;
+
+}
+
+#blue:hover {
+    color: violet;
+    font-size: 16pt;
+    text-shadow: 1px 1px 0px #fff, 3px 3px 0px #d3d3d7;
+    margin: 5px;
+    border: 3px solid red;
+    background-color: yellow;
+    cursor: -webkit-grab;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(24, 34, 184);
+    text-decoration-style: dashed;
+}

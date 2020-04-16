@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    font-family: helvetica;
+    color: #3014b4;
+    font-size: 18pt;
+    text-shadow: 1px 1px 0px #fff, 3px 3px 0px #d3d3d7;
+}
+
+ul {
+    margin-left: 50px;
+}
+
+li {
+    font-family: georgia;
+    font-style: italic;
+    font-size: 12pt;
+    color: #3212af;
+}
+
+.class_red {
+    text-align: center;
+    font-family: comic sans ms;
+    font-size: 16pt;
+    color: red;
+    text-shadow: 1px 1px 0px #fff, 3px 3px 0px #d3d3d7;
+}
+
+p {
+    font-family: verdana;
+    font-size: 12pt;
+}
+
+#green_par {
+    color: green;
+}
