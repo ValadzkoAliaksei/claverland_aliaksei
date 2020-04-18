@@ -34,3 +34,7 @@ table li {
     font-weight: normal;
     color: #000;
 }
+
+a {
+    text-decoration: none;
+}
