@@ -1,0 +1,8 @@
+p {
+    color: red;
+    width: 300px;
+}
+
+p span {
+    color: blue;
+}
