@@ -1,0 +1,23 @@
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    padding: 0px 5px;
+}
+
+td>p {
+    padding: 0;
+    margin: 0;
+}
+
+td:only-of-type {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4px 5px;
+}
+

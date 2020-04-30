@@ -1,0 +1,7 @@
+input:indeterminate {
+    color:#0000ff;
+}
+
+input:checked {
+    color:#ff0000;
+}
