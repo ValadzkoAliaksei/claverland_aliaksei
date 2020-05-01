@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <table>
+            <caption>
+                Данные о клиенте
+            </caption>
+            <tr>
+                <td colspan="2">
+                    Основные данные
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="surname">Фамилия</label>
+                </td>
+                <td>
+                    <input type="text" id="surname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Имя</label>
+                </td>
+                <td>
+                    <input type="text" id="name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="middle-name">Отчество</label>
+                </td>
+                <td>
+                    <input type="text" id="middle-name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date-of-birth">Дата рождения</label>
+                </td>
+                <td>
+                    <input type="date" id="date-of-birth">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comment">Комментарий</label>
+                </td>
+                <td>
+                    <textarea id="comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Контакты
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Адрес</label>
+                </td>
+                <td>
+                    <input type="text" id="address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Телефон</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" placeholder="+375 (29) 123-45-67" pattern="\+375\s?[\(]{0,1}[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">e-mail</label>
+                </td>
+                <td>
+                    <input type="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mailing">Получать рассылку</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="mailing">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Обязательные для заполнения поля выделены красным
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
