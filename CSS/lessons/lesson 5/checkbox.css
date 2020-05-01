@@ -1,7 +1,7 @@
-input:indeterminate {
+input:indeterminate + label{
     color:#0000ff;
 }
 
-input:checked {
+input:checked + label{
     color:#ff0000;
 }
