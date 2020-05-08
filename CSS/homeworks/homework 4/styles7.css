@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 300px;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    border: 1px solid black;
+    margin: 8px;
+}
+
+p.b {
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 6px;
+}
+
+p.n {
+    margin-bottom: 1em;
+}
+
+.sup {
+    vertical-align: super;
+    font-size: 12px;
+}
+
+.sub {
+    vertical-align: sub;
+    font-size: 12px;
+}

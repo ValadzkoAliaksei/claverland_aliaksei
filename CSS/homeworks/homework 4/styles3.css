@@ -1,0 +1,12 @@
+p {
+    width: 500px;
+    padding: 1em;
+    margin: 2em;
+    border: 1px solid gray;
+}
+
+#p_2 {
+    text-shadow: 1px 1px 2px grey;
+    letter-spacing: 1.3px;
+    white-space: pre;
+}

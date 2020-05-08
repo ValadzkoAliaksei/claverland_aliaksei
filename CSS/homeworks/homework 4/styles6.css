@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 400px;
+    padding: 7px;
+    border: 1px solid black;
+    margin: 8px;
+}
+
+div p:first-of-type {
+    color: green;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.8em;
+}
+
+div p:nth-of-type(2) {
+    color: orange;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 2em;
+    padding-top: 0.2em;
+}
+
+div p:last-of-type {
+    font-size: 21px;
+    padding-bottom: 0.5em;
+}
+
+span.l {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+span.b {
+    font-weight: bold;
+    text-decoration: underline dashed orange;
+}
