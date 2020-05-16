@@ -36,12 +36,8 @@ td {
     position: relative;
 }
 
-tbody tr:hover td {
+tbody tr:hover {
     background-color: rgba(140, 140, 255, 0.4);
-}
-
-tbody th:hover ~ td {
-    background-color: white;
 }
 
 td:hover::after {

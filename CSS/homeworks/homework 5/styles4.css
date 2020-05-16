@@ -1,0 +1,19 @@
+
+p {
+    background-color: #d7facd;
+    border: 3px solid #b7f8a4;
+    width: 250px;
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+    padding: 7px;
+}
+
+    p::before {
+    position: absolute; 
+    top: 100%; 
+    left: 5%;
+    border: 20px solid transparent;
+    border-top: 20px solid #d7facd;
+    content: ' ';
+}
