@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #373793;
+    text-shadow: 1px 1px 0 grey;
+}
+
+table {
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #373793;
+    color: white;
+    font-weight: bold;
+}
+
+th {
+    border: 1px solid black;
+    padding-left: 10px;
+    background-color: #7f7fa5;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+}
+
+td {
+    border: 1px solid black;
+    padding: 0 10px;
+    position: relative;
+}
+
+tbody tr:hover td {
+    background-color: rgba(140, 140, 255, 0.4);
+}
+
+tbody th:hover ~ td {
+    background-color: white;
+}
+
+td:hover::after {
+    content: "";
+    position: absolute; 
+    height: 2000vh;
+    left: 0;
+    top: -1000vh;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(140, 140, 255, 0.4);
+}

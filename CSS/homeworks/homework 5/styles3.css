@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th,
+td {
+    border-radius: 5px;
+    width: 120px;
+    padding: 15px;
+    empty-cells: hide;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+thead th {
+    background: linear-gradient(to top, #8af004, #6ab623);
+}
+
+tbody th {
+    background: linear-gradient( 45deg, #8af004, #6ab623);
+}
+
+td {
+    background-color: #cef7ad;
+    text-align: center;
+}
+
+th {
+    color: white;
+    font-weight: normal;
+}

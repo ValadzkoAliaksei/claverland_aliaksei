@@ -13,4 +13,6 @@ td {
 
 table:last-of-type {
     caption-side: bottom;
+    border-spacing: 5px;
+    empty-cells: hide;
 }
