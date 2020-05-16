@@ -1,0 +1,23 @@
+#but {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(to top, #4fbd24, #41ec03);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    width: 200px;
+    font-size: 25px;
+    outline: 1px solid white;
+    outline-offset: -5px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#but:hover {
+    background: linear-gradient(to top, #f9a80c, #fbc157);
+}
+
+#but:active {
+    background: linear-gradient(to top, #f9cd66, #fae069);
+}
