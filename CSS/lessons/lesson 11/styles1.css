@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div_1 {
+   position: fixed;
+   top: 30px;
+   left: 35px;
+   width: 300px;
+   height: 400px;
+   padding: 15px;
+   border: 3px dashed green;
+}
+
+.div_2 {
+    width: 70px;
+    height: 50px;
+    background: linear-gradient(to top left, #00ffff, #ffffff);
+    padding: 5px;
+    border: 2px solid orange;
+    float: left;
+}
+
+.div_3 {
+    width: 70px;
+    height: 50px;
+    background: linear-gradient(45deg, #0000ff, #ffffff);
+    padding: 5px;
+    border: 2px dotted purple;
+    float: right;
+}
