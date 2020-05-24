@@ -1,0 +1,21 @@
+body {
+    background-color: #a6ad92;
+}
+
+.bottom {
+    background-color: #258d46;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 24px;
+    box-shadow: 5px 5px 1px #810000;
+    text-align: center;
+    word-spacing: 10px;
+    padding: 20px 40px;
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 1240px;
+    margin: auto;
+}
+
+.nav {
+    background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+    float: left;
+    padding: 0 160px;
+    width: 920px;
+}
+
+.line {
+    background-color: black;
+    height: 6px;
+}
+
+.menu-link {
+    position: relative;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    margin: 0 20px;
+}
+
+.menu-link:hover {
+    color: #62bae0;
+}
+
+.menu-link:after {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background-color: #62bae0;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: all 0.5s;
+}
+
+.menu-link:hover:after {
+    width: 100%;
+}
+
+
+
