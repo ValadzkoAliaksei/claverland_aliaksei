@@ -1,0 +1,65 @@
+.container {
+    max-width: 980px;
+    padding: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.photo-grid {
+    position: relative;
+    padding: 10px;
+    margin-top: 160px;
+    text-align: center;
+}
+
+img:nth-of-type(even) {
+    transform: translateX(10px) rotate(8deg);
+}
+
+img:nth-of-type(odd) {
+    transform: translate(40px, -30px) rotate(-5deg);
+}
+
+img:nth-of-type(3n) {
+    transform: translate(7px, -40px) rotate(-15deg);
+}
+
+img:nth-of-type(5n) {
+    left: 5px;
+    top: 20px;
+}
+
+img:nth-of-type(6n) {
+    transform: translate(-10px, -30px) rotate(15deg);
+}
+
+img:nth-of-type(9n) {
+    transform: translate(-10px, -30px) rotate(22deg);
+}
+
+img:hover {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    transform: scale(1.5) rotate(360deg);
+}
+
+img {
+    transition: all 0.4s ease-in 0s;
+    position: relative;
+    height: 172px;
+    background-color: #ffffff;
+    float: left;
+    padding-top: -100px;
+    padding: 10px;
+    z-index: 2;
+    box-shadow: 0 0 5px #000000;
+}
+
+
+.clear {
+    clear: both;
+}
