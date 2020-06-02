@@ -29,19 +29,28 @@ header {
 p {
 	margin: 2px;
 }
+.flexbox {
+	display: flex;
+	align-content: flex-start;
+	align-items: start;
+	justify-content: space-between;
+}
 
 .left {
-	float: left;
-	width: 250px;
+	flex-basis: 12%;
+	align-self: stretch;
+	order: 1;
 }
 
 .right {
-	float: right;
-	width: 250px;
+	flex-basis: 12%;
+	align-self: stretch;
+	order: 3;
 }
 
 .center {
-	margin: 0 280px;
+	flex-basis: 76%;
+	order: 2;
 }
 
 footer {
