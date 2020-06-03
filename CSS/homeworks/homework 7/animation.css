@@ -1,0 +1,54 @@
+#container {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+#movie {
+    width: 3072px;
+    height: 400px;
+    padding: 0;
+    animation-name: my_movie;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#movie img {
+    margin: 0;
+    float: left;
+}
+
+@keyframes my_movie {
+    0% {
+        margin-left:0px;
+        opacity:1;
+    }
+    20% {
+        margin-left:0px;
+        opacity:1;  
+    }
+    25% {
+        opacity:0.3;
+    }
+    30% {
+        margin-left:-1024px;
+        opacity:1;
+    }
+    70% {
+        margin-left:-1024px;
+        opacity:1;  
+    }
+    75% {
+        opacity:0.3;
+    }
+    80% {
+        margin-left:-2048px;
+        opacity:1;
+    }
+    100% {
+        margin-left:-2048px;
+        opacity:1;
+    }
+}

@@ -1,0 +1,60 @@
+header,
+aside,
+article,
+footer,
+section,
+nav {
+	font-family: helvetica;
+	font-size: 14pt;
+	border: #CCC 2px solid;
+	padding: 5px 10px;
+}
+
+aside,
+article,
+section {
+	background-color: #ebedf5;
+}
+
+header {
+	background-color: #4d68a2;
+	color: #fff;
+}
+
+#topmenu {
+	background-color: #313e99;
+	color: #fff;
+}
+
+p {
+	margin: 2px;
+}
+.flexbox {
+	display: flex;
+	align-content: flex-start;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.left {
+	flex-basis: 12%;
+	align-self: stretch;
+	order: 1;
+}
+
+.right {
+	flex-basis: 12%;
+	align-self: stretch;
+	order: 3;
+}
+
+.center {
+	flex-basis: 76%;
+	order: 2;
+}
+
+footer {
+	background-color: #4d68a2;
+	color: #fff;
+	clear: both;
+}
