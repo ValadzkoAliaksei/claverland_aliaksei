@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+header {
+    background-color: #095c5c;
+    height: 200px;
+    background-image: url(img/1420.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1600px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+nav {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    max-width: 1600px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1600px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+}
+
+.left-panel {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: hotpink;
+    flex-basis: 250px;
+    margin: 5px;
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-basis: 500px;
+    flex-grow: 4;
+    flex-shrink: 1;
+
+}
+
+article {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 1600px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100px;
+    background-color: maroon;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+@media (max-width:768px) {
+    section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:480px) {
+    header {
+        background-image: url(img/320.jpg);
+    }
+}
+
+@media (max-width:767px) and (min-width:480px) {
+    header {
+        background-image: url(img/480.jpg);
+    }
+}
+
+@media (max-width:1023px) and (min-width:768px) {
+    header {
+        background-image: url(img/768.jpg);
+    }
+}
+
+@media (max-width:1419px) and (min-width:1024px) {
+    header {
+        background-image: url(img/1024.jpg);
+    }
+}
