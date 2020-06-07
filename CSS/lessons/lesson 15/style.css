@@ -7,12 +7,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     flex-grow: 1;
     flex-shrink: 1;
+    font-family: helvetica;
 }
 
 header {
@@ -23,7 +22,7 @@ header {
     background-repeat: no-repeat;
     width: 100%;
     max-width: 1600px;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 1;
 }
 
@@ -32,11 +31,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
-    flex-grow: 1;
+    background-color: #00053d;
+    flex-grow: 0;
     flex-shrink: 1;
     width: 100%;
     max-width: 1600px;
+    height: 70px;
 }
 
 section {
@@ -47,14 +47,20 @@ section {
     flex-grow: 1;
     flex-shrink: 1;
     justify-content: space-between;
+    min-height: 250px;
+}
+
+#bottom-section {
+    height: 250px;
+    flex-grow: 0;
 }
 
 .left-panel {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 0;
-    background-color: hotpink;
+    background-color: #8b27e3;
     flex-basis: 250px;
     margin: 5px;
     color: #ffffff;
@@ -63,14 +69,13 @@ section {
 main {
     display: flex;
     justify-content: center;
-    flex-basis: 500px;
-    flex-grow: 4;
+    flex-basis: 100px;
+    flex-grow: 1;
     flex-shrink: 1;
-
 }
 
 article {
-    background-color: green;
+    background-color: #00ffff;
     display: flex;
     justify-content: center;
     flex-grow: 1;
@@ -84,10 +89,10 @@ footer {
     justify-content: center;
     width: 100%;
     max-width: 1600px;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-shrink: 1;
     height: 100px;
-    background-color: maroon;
+    background-color: #003145;
     color: #ffffff;
     padding-top: 10px;
 }
@@ -95,6 +100,9 @@ footer {
 @media (max-width:768px) {
     section {
         flex-direction: column;
+    }
+    .left-panel {
+        flex-basis: 75px;
     }
 }
 
