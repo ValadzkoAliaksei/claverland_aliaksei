@@ -1,0 +1,1 @@
+alert("scripts2.js");

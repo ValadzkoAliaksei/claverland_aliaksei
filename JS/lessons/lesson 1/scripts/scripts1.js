@@ -1,0 +1,1 @@
+alert("scripts1.js");
