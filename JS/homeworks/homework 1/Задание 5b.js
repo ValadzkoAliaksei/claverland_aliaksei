@@ -19,9 +19,13 @@ if (numberImgRow < numberImg) {
     alert(`количество полных рядов в галерее ${numberRow}`);
     let numberImgLastRow = numberImg - numberImgRow * numberRow;
     alert(`количество изображений в последнем ряду ${numberImgLastRow}`);
-} else {
-    alert(`Получился 1 неполный ряд и в нем ${numberImg} изображений`);
-}
+} else if (numberImg == 1) {
+    alert(`Получился 1 неполный ряд и в нем ${numberImg} изображениe`);
+    } else if (numberImg >= 5) {
+        alert(`Получился 1 неполный ряд и в нем ${numberImg} изображений`);
+        } else {
+            alert(`Получился 1 неполный ряд и в нем ${numberImg} изображения`);
+        };
 for (let i = 0; i < numberImg; i += 1) {
     let img = document.createElement('img');
     img.className = 'img';
