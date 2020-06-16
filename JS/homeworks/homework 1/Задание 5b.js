@@ -6,13 +6,13 @@ let body = document.querySelector('.body');
 body.style.width = `${widthBody}px`;
 if (confirm ("Все изображения одинаковой ширины?")) {
     do {
-        alert("Пожалуста, введите численные значения. Кроме 0");
+        alert("Пожалуста, введите численные значения. Больше 0");
         numberImg = +prompt("Сколько изображений в галерее?");
         widthImg = +prompt("Какова ширина каждого изображения в пикселях?");
         if ((widthImg + marginImg * 2) > widthBody) {
             alert("Ширина изображения больше ширины страницы. Пожалуста, введите ширину изображения меньше 1015");
         }
-    } while (!numberImg || !widthImg || (widthImg + marginImg * 2) > widthBody);
+    } while (!numberImg || !widthImg || (widthImg + marginImg * 2) > widthBody || widthImg <= 0 || numberImg <= 0);
     let numberImgRow = (widthBody - widthBody % (widthImg + marginImg * 2)) / (widthImg + marginImg * 2);
     if (numberImgRow < numberImg) {
         alert(`Количество изображений в каждом ряду ${numberImgRow}`);
@@ -44,16 +44,16 @@ if (confirm ("Все изображения одинаковой ширины?")
     let imgRow = 1;
     let sumI = 0;
     do {
-        alert("Пожалуста, введите численное значение. Кроме 0");
+        alert("Пожалуста, введите численное значение. Больше 0");
         numberImg = +prompt("Сколько изображений в галерее?");
-    } while (!numberImg);
+    } while (!numberImg || numberImg <= 0);
     for (let i = 1; i <= numberImg; i += 1) {
         do {
             widthImg = +prompt(`Введите ширину ${i} изображения в пикселях числом меньше 1015`);
-        } while (!widthImg || (widthImg + marginImg * 2) > widthBody);
+        } while (!widthImg || (widthImg + marginImg * 2) > widthBody || widthImg <=0);
         sumWidthImg = sumWidthImg + widthImg + marginImg * 2;
         if (sumWidthImg <= widthBody) {
-            sumI++
+            sumI++;
         } else {
             alert(`Количество изображений в ${imgRow} ряду равно ${sumI}`);
             imgRow++;
