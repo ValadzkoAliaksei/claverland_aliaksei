@@ -1,3 +1,4 @@
+"use striсt";
 let n = prompt('Введите количество поездок, которое Вы желаете совершить');
 while (!+n || n % 1 !== 0 || n <= 0) {
     alert('Вы ввели неправильное значение. Введите целое положительное число!!!')
@@ -22,7 +23,6 @@ if (ticket1Buy * ticket1 <= ticket10) {
     ticket1Buy = 0;
     if (ticket10Buy * ticket10 >= ticket60) {
         ticket10Buy = 0;
-        ticket1Buy = 0;
         ticket60Buy++;
     };
 };
