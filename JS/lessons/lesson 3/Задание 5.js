@@ -17,4 +17,4 @@ if (max < number2) {
 if (max < number3) {
     max = number3
 };
-alert(`Самое большое число ${max}`);
+alert(`Целая часть самого большого целого числа ${max - max % 1}`);
