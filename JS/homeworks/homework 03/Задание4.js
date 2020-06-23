@@ -6,6 +6,6 @@ while (isNaN(n) || n % 1 !== 0 || n < 0) {
 };
 let sum = 0n;
 for (let i = 0n; i <= n; i++) {
-    sum +=i;
+    sum += i;
 };
 alert(sum);
