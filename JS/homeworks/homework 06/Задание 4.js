@@ -20,7 +20,7 @@ function ask(question, yes, no) {
 
   let showCancel = function() {
     alert("Недостаточная сумма для оплаты.");
-  }
+  };
   
   ask("Внесенных средств хватает для покупки?", showOk, showCancel);
   
