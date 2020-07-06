@@ -36,6 +36,3 @@ for (let key in clone) {
         alert (`Самый большой рейтинг (согласно интернет ресурсам) у ${key} равный ${clone[key]}%`);
     }
 }
-
-let tarakan = salary.Lukashenko;
-let Narod = sum - tarakan;
