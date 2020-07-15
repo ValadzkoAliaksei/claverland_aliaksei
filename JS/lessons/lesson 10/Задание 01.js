@@ -7,4 +7,4 @@ while (isNaN(inch) || inch <= 0 || inch % 1 != 0) {
 
 let calcCentimeter = () => (inch * 2.54).toFixed(2);
 
-alert (`Диагональ монитора равная ${inch} в дюймах равна в сантиметрах: ${calcCentimeter()}`);
+alert (`Диагональ монитора равная в дюймах: ${inch}, в сантиметрах будет равна: ${calcCentimeter()}см.`);
