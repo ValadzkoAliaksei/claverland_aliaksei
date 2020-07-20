@@ -10,7 +10,8 @@ alert(`Первый элемента кратный 5 в данном масив
 let positiveNumbers = Arr.filter(item => item > 0);
 alert(`Элементы являющиеся положительными числами в данном масиве: ${positiveNumbers}`);
 // д
-let sortArr = Arr.sort((a, b) => a - b);
+let sortArr = Arr.concat();
+sortArr.sort((a, b) => a - b);
 alert(`Данный масив отсортированный по возрастанию: ${sortArr}`);
 // е
 let mapArr = Arr.map(item => {
@@ -24,3 +25,9 @@ alert(`Данный масив отсортированный по убыван�
 // з
 let reverseArr = Arr.reverse();
 alert(`Данный масив в обратном порядке ${reverseArr}`);
+// и
+let multiplication = Arr.reduce((mult, current) => mult * current);
+alert(`Произведение элементов данного массива: ${multiplication}`);
+// к
+let mean = Arr.reduce((sum, current) => sum + current, 0) / Arr.length;
+alert(`Среднее арифметическое элементов данного массива ${mean}`);
