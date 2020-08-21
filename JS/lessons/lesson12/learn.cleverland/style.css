@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 24px;
+}
+
+header {
+    font-size: 36px;
+    color: #6E76F1;
+    margin-bottom: 36px;
+    font-weight: 600;
+}
+
+button {
+    background: #fff;
+    border: 1px solid #8a8a8a;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+button.red-button {
+    background: #ff6565;    
+}
+
+.menu-button {
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-button.closed {
+    background-image: url('burger.png');
+}
+
+.collapse {
+    margin: 48px 0;
+}
+
+.plate {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding: 12px;
+    border: 1px solid #8a8a8a;
+    border-radius: 8px;
+}
+
+.content {
+    padding-top: 16px;
+}
