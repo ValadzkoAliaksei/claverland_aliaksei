@@ -32,6 +32,8 @@ button.red-button {
     height: 32px;
     background-position: center;
     background-size: cover;
+    background-image: url('close.svg');
+    cursor: pointer;
 }
 
 .menu-button.closed {
@@ -54,4 +56,5 @@ button.red-button {
 
 .content {
     padding-top: 16px;
+    display: none;
 }
