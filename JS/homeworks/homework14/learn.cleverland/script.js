@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function printId(target) {
         const div = document.querySelector('.some_classes');
         if (target != buttonClear) {
-            div.append(target.getAttribute('id'));
+            div.append(`${target.getAttribute('id')}: ${div[target.getAttribute('id')]} `);
         } else {
             div.innerHTML = '';
         };
